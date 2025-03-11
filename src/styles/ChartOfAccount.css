@@ -1,0 +1,39 @@
+.assets-row {
+    background-color: #99dd99;
+}
+
+.liabilities-row {
+    background-color: #ffcccc;
+}
+
+.equity-row {
+    background-color: #cce5ff;
+}
+
+.revenue-row {
+    background-color: #ffffcc;
+}
+
+.expenses-row {
+    background-color: #ffebcc;
+}
+
+.assets-row-dark {
+    background-color: #66cc66;
+}
+
+.liabilities-row-dark {
+    background-color: #ff9999;
+}
+
+.equity-row-dark {
+    background-color: #99ccff;
+}
+
+.revenue-row-dark {
+    background-color: #ffff99;
+}
+
+.expenses-row-dark {
+    background-color: #ffcc99;
+}
