@@ -1,22 +1,33 @@
-import {Layout} from "antd";
-import {BrowserRouter as Router} from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Layout } from "antd";
+import { BrowserRouter as Router } from "react-router-dom";
 
-const {Header, Content} = Layout;
+import AppHeader from "./components/Header";
+import AppRoutes from "./AppRoutes";  
+import AppSider from "./components/Sider";
+
+const { Header, Content, Sider } = Layout;
 
 function App() {
-    return (
+  return (
+    <Router>
+      <Layout style={{ minHeight: "100vh" }}>
+        <Header>
+          <AppHeader />
+        </Header>
         <Layout>
-            <Router>
-                <Header>
-                    {/* <AppHeader/> */}
-                </Header>
-                <Content>
-                    <AppRoutes/>
-                </Content>
-            </Router>
+          <Sider width={200}>
+            <AppSider />
+          </Sider>
+
+          <Layout>
+            <Content style={{ marginLeft: "200px", padding: "20px" }}>
+              <AppRoutes />
+            </Content>
+          </Layout>
         </Layout>
-    );
+      </Layout>
+    </Router>
+  );
 }
 
 export default App;
